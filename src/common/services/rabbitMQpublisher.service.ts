@@ -5,7 +5,7 @@ import debug from 'debug'
 const log: debug.IDebugger = debug('app:amqpPublish-service');
 
 //const conn = `amqp://localhost:5672`
-const conn = `amqp://nAbulVowmhKPC79tRCtYbBDU6J5kgocz:xuoVrVECtLAqyYdB_twHORRTsIyj-JtK@rabbitmq:5672`
+const conn = ``
 
 export async function publishMessage(queue: string, msg: any) {   
     const connection = await amqp.connect(conn); 

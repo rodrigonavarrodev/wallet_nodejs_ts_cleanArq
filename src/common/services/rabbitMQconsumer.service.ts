@@ -5,7 +5,7 @@ import debug from 'debug'
 const log: debug.IDebugger = debug('app:amqp-service');
 
 //const conn = `amqp://${process.env.AMQP_SERVER}`
-const conn = `amqp://nAbulVowmhKPC79tRCtYbBDU6J5kgocz:xuoVrVECtLAqyYdB_twHORRTsIyj-JtK@rabbitmq:5672`
+const conn = ``
 
 export async function consumeMessages() {
     try {
